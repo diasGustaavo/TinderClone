@@ -13,6 +13,8 @@
 		B456B4BF297ED248005590FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B456B4BE297ED248005590FC /* Preview Assets.xcassets */; };
 		B456B4C6297ED2E3005590FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4C5297ED2E3005590FC /* MainView.swift */; };
 		B456B4C8297ED58C005590FC /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4C7297ED58C005590FC /* TabBarButtonView.swift */; };
+		B456B4CA297EDC3E005590FC /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4C9297EDC3E005590FC /* AppStateManager.swift */; };
+		B456B4CC297EDE85005590FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4CB297EDE85005590FC /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B456B4BE297ED248005590FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B456B4C5297ED2E3005590FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B456B4C7297ED58C005590FC /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
+		B456B4C9297EDC3E005590FC /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
+		B456B4CB297EDE85005590FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				B456B4BB297ED248005590FC /* Assets.xcassets */,
 				B456B4BD297ED248005590FC /* Preview Content */,
 				B456B4C7297ED58C005590FC /* TabBarButtonView.swift */,
+				B456B4C9297EDC3E005590FC /* AppStateManager.swift */,
+				B456B4CB297EDE85005590FC /* Extensions.swift */,
 			);
 			path = TinderClone;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B456B4C8297ED58C005590FC /* TabBarButtonView.swift in Sources */,
+				B456B4CC297EDE85005590FC /* Extensions.swift in Sources */,
 				B456B4BA297ED247005590FC /* ContentView.swift in Sources */,
 				B456B4C6297ED2E3005590FC /* MainView.swift in Sources */,
 				B456B4B8297ED247005590FC /* TinderCloneApp.swift in Sources */,
+				B456B4CA297EDC3E005590FC /* AppStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
