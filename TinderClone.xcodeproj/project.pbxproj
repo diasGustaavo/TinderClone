@@ -61,11 +61,10 @@
 			children = (
 				B456B4B7297ED247005590FC /* TinderCloneApp.swift */,
 				B456B4B9297ED247005590FC /* ContentView.swift */,
-				B456B4C5297ED2E3005590FC /* MainView.swift */,
+				B456B4C9297EDC3E005590FC /* AppStateManager.swift */,
+				B4ED8258297EFCCB00656C69 /* MainTabBar */,
 				B456B4BB297ED248005590FC /* Assets.xcassets */,
 				B456B4BD297ED248005590FC /* Preview Content */,
-				B456B4C7297ED58C005590FC /* TabBarButtonView.swift */,
-				B456B4C9297EDC3E005590FC /* AppStateManager.swift */,
 				B456B4CB297EDE85005590FC /* Extensions.swift */,
 			);
 			path = TinderClone;
@@ -77,6 +76,15 @@
 				B456B4BE297ED248005590FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4ED8258297EFCCB00656C69 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B456B4C5297ED2E3005590FC /* MainView.swift */,
+				B456B4C7297ED58C005590FC /* TabBarButtonView.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
