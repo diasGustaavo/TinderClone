@@ -11,6 +11,7 @@ struct ChatView: View {
     @ObservedObject var chatMng: ChatManager
     
     @State private var typingMessage: String = ""
+    @State private var scrollProxy: ScrollViewProxy? = nil
     
     private var person: Person
     
@@ -24,10 +25,16 @@ struct ChatView: View {
             VStack {
                 Spacer().frame(height: 85)
                 ScrollView(.vertical, showsIndicators: false) {
-                    LazyVStack {
-                        ForEach(chatMng.messages.indices, id: \.self) { index in
-                            let msg = chatMng.messages[index]
-                            MessageView(message: msg)
+                    ScrollViewReader { proxy in
+                        LazyVStack {
+                            ForEach(chatMng.messages.indices, id: \.self) { index in
+                                let msg = chatMng.messages[index]
+                                MessageView(message: msg)
+                                    .id(index)
+                            }
+                        }
+                        .onAppear {
+                            scrollProxy = proxy
                         }
                     }
                 }
@@ -66,11 +73,25 @@ struct ChatView: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
+        .onChange(of: chatMng.keyboardIsShowing) { value in
+            if value {
+                scrollToBottom()
+            }
+        }
+        .onChange(of: chatMng.messages) { _ in
+            scrollToBottom()
+        }
     }
     
     func sendMessage() {
         chatMng.sendMessage(Message(content: typingMessage))
         typingMessage = ""
+    }
+    
+    func scrollToBottom() {
+        withAnimation {
+            scrollProxy?.scrollTo(chatMng.messages.count - 1, anchor: .bottom)
+        }
     }
 }
 
