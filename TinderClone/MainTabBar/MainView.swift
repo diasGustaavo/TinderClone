@@ -35,6 +35,10 @@ struct MainView: View {
                 .edgesIgnoringSafeArea(.vertical)
             
             VStack {
+                correctViewForState()
+                
+                Spacer().frame(height: 20)
+                
                 HStack {
                     Spacer()
                     
@@ -54,11 +58,6 @@ struct MainView: View {
                     
                     Spacer()
                 }
-                .frame(height: 100)
-                
-                correctViewForState()
-                
-                Spacer()
             }
         }
     }
