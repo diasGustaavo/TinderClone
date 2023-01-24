@@ -15,6 +15,11 @@
 		B456B4C8297ED58C005590FC /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4C7297ED58C005590FC /* TabBarButtonView.swift */; };
 		B456B4CA297EDC3E005590FC /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4C9297EDC3E005590FC /* AppStateManager.swift */; };
 		B456B4CC297EDE85005590FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4CB297EDE85005590FC /* Extensions.swift */; };
+		B4BD301F297F5321001F95CD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD301E297F5321001F95CD /* Message.swift */; };
+		B4BD3022297F53AA001F95CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3021297F53AA001F95CD /* Person.swift */; };
+		B4BD3024297F5454001F95CD /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3023297F5454001F95CD /* MessagePreview.swift */; };
+		B4BD3029297F554F001F95CD /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3028297F554F001F95CD /* MessageView.swift */; };
+		B4BD302B297F570A001F95CD /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD302A297F570A001F95CD /* ChatView.swift */; };
 		B4ED825A297EFE1400656C69 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED8259297EFE1400656C69 /* ProfileView.swift */; };
 		B4ED825D297EFFAF00656C69 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED825C297EFFAF00656C69 /* RoundedImage.swift */; };
 		B4ED8260297F00FD00656C69 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B4ED825F297F00FD00656C69 /* KingfisherSwiftUI */; };
@@ -31,6 +36,11 @@
 		B456B4C7297ED58C005590FC /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
 		B456B4C9297EDC3E005590FC /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		B456B4CB297EDE85005590FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B4BD301E297F5321001F95CD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B4BD3021297F53AA001F95CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B4BD3023297F5454001F95CD /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
+		B4BD3028297F554F001F95CD /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		B4BD302A297F570A001F95CD /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		B4ED8259297EFE1400656C69 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B4ED825C297EFFAF00656C69 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		B4ED8262297F0C8A00656C69 /* ProfileSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSwipePromo.swift; sourceTree = "<group>"; };
@@ -72,7 +82,9 @@
 				B456B4C9297EDC3E005590FC /* AppStateManager.swift */,
 				B4ED8258297EFCCB00656C69 /* MainTabBar */,
 				B4ED825B297EFE2100656C69 /* Profile */,
+				B4BD3020297F5329001F95CD /* Model */,
 				B4ED8261297F022800656C69 /* HelperView */,
+				B4BD3027297F550A001F95CD /* Messages */,
 				B456B4BB297ED248005590FC /* Assets.xcassets */,
 				B456B4BD297ED248005590FC /* Preview Content */,
 				B456B4CB297EDE85005590FC /* Extensions.swift */,
@@ -86,6 +98,25 @@
 				B456B4BE297ED248005590FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4BD3020297F5329001F95CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4BD301E297F5321001F95CD /* Message.swift */,
+				B4BD3023297F5454001F95CD /* MessagePreview.swift */,
+				B4BD3021297F53AA001F95CD /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4BD3027297F550A001F95CD /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				B4BD3028297F554F001F95CD /* MessageView.swift */,
+				B4BD302A297F570A001F95CD /* ChatView.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 		B4ED8258297EFCCB00656C69 /* MainTabBar */ = {
@@ -194,11 +225,16 @@
 				B4ED825D297EFFAF00656C69 /* RoundedImage.swift in Sources */,
 				B456B4CC297EDE85005590FC /* Extensions.swift in Sources */,
 				B456B4BA297ED247005590FC /* ContentView.swift in Sources */,
+				B4BD302B297F570A001F95CD /* ChatView.swift in Sources */,
+				B4BD3022297F53AA001F95CD /* Person.swift in Sources */,
+				B4BD3029297F554F001F95CD /* MessageView.swift in Sources */,
 				B4ED8263297F0C8A00656C69 /* ProfileSwipePromo.swift in Sources */,
 				B456B4C6297ED2E3005590FC /* MainView.swift in Sources */,
 				B456B4B8297ED247005590FC /* TinderCloneApp.swift in Sources */,
+				B4BD301F297F5321001F95CD /* Message.swift in Sources */,
 				B4ED825A297EFE1400656C69 /* ProfileView.swift in Sources */,
 				B456B4CA297EDC3E005590FC /* AppStateManager.swift in Sources */,
+				B4BD3024297F5454001F95CD /* MessagePreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
