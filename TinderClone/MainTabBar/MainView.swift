@@ -24,7 +24,7 @@ struct MainView: View {
             let view = Text("star")
             return AnyView(view)
         case .message:
-            let view = Text("message")
+            let view = MessageListView()
             return AnyView(view)
         case .profile:
             let view = ProfileView()
@@ -33,40 +33,43 @@ struct MainView: View {
     }
     
     var body: some View {
-        ZStack {
-            Color(.systemGray6)
-                .opacity(0.35)
-                .edgesIgnoringSafeArea(.vertical)
-            
-            VStack {
-                correctViewForState()
+        NavigationView {
+            ZStack {
+                Color(.systemGray6)
+                    .opacity(0.35)
+                    .edgesIgnoringSafeArea(.vertical)
                 
-                Spacer().frame(height: 20)
-                
-                HStack {
-                    Spacer()
+                VStack {
+                    correctViewForState()
                     
-                    TabBarButtonView(type: .fire)
-                    
-                    Spacer()
-                    
-                    TabBarButtonView(type: .star)
-                    
-                    Spacer()
-                    
-                    TabBarButtonView(type: .message)
-                    
-                    Spacer()
-                    
-                    TabBarButtonView(type: .profile)
-                    
-                    Spacer()
-                }
-                
-                if UIScreen.screenHeight <= 736 {
                     Spacer().frame(height: 20)
+                    
+                    HStack {
+                        Spacer()
+                        
+                        TabBarButtonView(type: .fire)
+                        
+                        Spacer()
+                        
+                        TabBarButtonView(type: .star)
+                        
+                        Spacer()
+                        
+                        TabBarButtonView(type: .message)
+                        
+                        Spacer()
+                        
+                        TabBarButtonView(type: .profile)
+                        
+                        Spacer()
+                    }
+                    
+                    if UIScreen.screenHeight <= 736 {
+                        Spacer().frame(height: 20)
+                    }
                 }
             }
+            .modifier(HideNavigationView())
         }
     }
 }
