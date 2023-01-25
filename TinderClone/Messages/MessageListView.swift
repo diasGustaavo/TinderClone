@@ -14,51 +14,70 @@ struct MessageListView: View {
     @State private var animationAmount = 1.0
     
     var body: some View {
-        VStack {
-            HStack {
-                TextField("Search Matches", text: $searchText)
-                    .padding(7)
-                    .padding(.horizontal, 25)
-                    .background(Color.textfieldBG)
-                    .cornerRadius(8)
-                    .overlay(
-                        HStack {
-                            Image(systemName: "magnifyingglass")
-                                .foregroundColor(.textPrimary)
-                                .font(.system(size: 20, weight: .bold))
-                                .padding(.leading, 4)
-                            
-                            Spacer()
+        ScrollView {
+            VStack {
+                // SEARCH BAR
+                HStack {
+                    TextField("Search Matches", text: $searchText)
+                        .padding(7)
+                        .padding(.horizontal, 25)
+                        .background(Color.textfieldBG)
+                        .cornerRadius(8)
+                        .overlay(
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                    .foregroundColor(.textPrimary)
+                                    .font(.system(size: 20, weight: .bold))
+                                    .padding(.leading, 4)
+                                
+                                Spacer()
+                            }
+                        )
+                    .padding(.horizontal, 10)
+                    .onTapGesture {
+                        withAnimation() {
+                            self.isEditing = true
                         }
-                    )
-                .padding(.horizontal, 10)
-                .onTapGesture {
-                    withAnimation() {
-                        self.isEditing = true
+                    }
+                    
+                    if self.isEditing {
+                        Button {
+                            withAnimation {
+                                self.isEditing = false
+                                self.searchText = ""
+                                UIApplication.shared.endEditing()
+                            }
+                        } label: {
+                            Text("Cancel")
+                        }
+                        .padding(.trailing, 10)
                     }
                 }
                 
-                if self.isEditing {
-                    Button {
-                        withAnimation {
-                            self.isEditing = false
-                            self.searchText = ""
-                            UIApplication.shared.endEditing()
+                Spacer().frame(height: 14)
+                
+                VStack {
+                    ForEach(vm.messagePreviews, id: \.self) { preview in
+                        NavigationLink {
+                            ChatView(person: preview.person)
+                        } label: {
+                            MessageRowView(preview: preview)
                         }
-                    } label: {
-                        Text("Cancel")
+                        .buttonStyle(PlainButtonStyle())
                     }
-                    .padding(.trailing, 10)
                 }
+                
+                Spacer()
             }
-            
-            Spacer()
         }
+        .modifier(HideNavigationView())
     }
 }
 
 struct MessageListView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageListView()
+        NavigationView {
+            MessageListView()
+        }
     }
 }

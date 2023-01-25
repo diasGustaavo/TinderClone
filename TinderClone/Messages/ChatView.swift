@@ -71,8 +71,7 @@ struct ChatView: View {
             }
             .padding(.top)
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
+        .modifier(HideNavigationView())
         .onChange(of: chatMng.keyboardIsShowing) { value in
             if value {
                 scrollToBottom()
