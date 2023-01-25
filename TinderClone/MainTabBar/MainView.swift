@@ -10,6 +10,10 @@ import SwiftUI
 struct MainView: View {
     
     @EnvironmentObject var appState: AppStateManager
+    private var isSmallPhone: Bool {
+        return false
+    }
+    let screenSize: CGRect = UIScreen.main.bounds
     
     func correctViewForState() -> some View {
         switch appState.selectedTab {
@@ -57,6 +61,10 @@ struct MainView: View {
                     TabBarButtonView(type: .profile)
                     
                     Spacer()
+                }
+                
+                if UIScreen.screenHeight <= 736 {
+                    Spacer().frame(height: 20)
                 }
             }
         }

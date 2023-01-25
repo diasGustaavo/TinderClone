@@ -53,6 +53,7 @@ struct ProfileSwipePromo: View {
             }
             .padding(.bottom, 30)
         }
+        
     }
 }
 
