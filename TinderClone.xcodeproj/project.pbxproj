@@ -15,6 +15,8 @@
 		B456B4C8297ED58C005590FC /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4C7297ED58C005590FC /* TabBarButtonView.swift */; };
 		B456B4CA297EDC3E005590FC /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4C9297EDC3E005590FC /* AppStateManager.swift */; };
 		B456B4CC297EDE85005590FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4CB297EDE85005590FC /* Extensions.swift */; };
+		B458B0F72981766600B1C987 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458B0F62981766600B1C987 /* MessageListView.swift */; };
+		B458B0F9298176E900B1C987 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458B0F8298176E900B1C987 /* MessageListVM.swift */; };
 		B4BD301F297F5321001F95CD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD301E297F5321001F95CD /* Message.swift */; };
 		B4BD3022297F53AA001F95CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3021297F53AA001F95CD /* Person.swift */; };
 		B4BD3024297F5454001F95CD /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3023297F5454001F95CD /* MessagePreview.swift */; };
@@ -38,6 +40,8 @@
 		B456B4C7297ED58C005590FC /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
 		B456B4C9297EDC3E005590FC /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		B456B4CB297EDE85005590FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B458B0F62981766600B1C987 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		B458B0F8298176E900B1C987 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		B4BD301E297F5321001F95CD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B4BD3021297F53AA001F95CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B4BD3023297F5454001F95CD /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				B4BD302A297F570A001F95CD /* ChatView.swift */,
 				B4BF98232980237D00197E3C /* ChatManager.swift */,
 				B4BF9825298026F400197E3C /* ChatViewHeader.swift */,
+				B458B0F62981766600B1C987 /* MessageListView.swift */,
+				B458B0F8298176E900B1C987 /* MessageListVM.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -228,10 +234,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4BF98242980237D00197E3C /* ChatManager.swift in Sources */,
+				B458B0F72981766600B1C987 /* MessageListView.swift in Sources */,
 				B456B4C8297ED58C005590FC /* TabBarButtonView.swift in Sources */,
 				B4ED825D297EFFAF00656C69 /* RoundedImage.swift in Sources */,
 				B4BF9826298026F400197E3C /* ChatViewHeader.swift in Sources */,
 				B456B4CC297EDE85005590FC /* Extensions.swift in Sources */,
+				B458B0F9298176E900B1C987 /* MessageListVM.swift in Sources */,
 				B456B4BA297ED247005590FC /* ContentView.swift in Sources */,
 				B4BD302B297F570A001F95CD /* ChatView.swift in Sources */,
 				B4BD3022297F53AA001F95CD /* Person.swift in Sources */,
