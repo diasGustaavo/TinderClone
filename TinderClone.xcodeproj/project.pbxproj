@@ -17,6 +17,9 @@
 		B456B4CC297EDE85005590FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456B4CB297EDE85005590FC /* Extensions.swift */; };
 		B458B0F72981766600B1C987 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458B0F62981766600B1C987 /* MessageListView.swift */; };
 		B458B0F9298176E900B1C987 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458B0F8298176E900B1C987 /* MessageListVM.swift */; };
+		B48289142982BEEF001BBE11 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48289132982BEEF001BBE11 /* UserManager.swift */; };
+		B48289162982BF50001BBE11 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48289152982BF50001BBE11 /* User.swift */; };
+		B48289192982C103001BBE11 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48289182982C103001BBE11 /* LikesView.swift */; };
 		B4BD301F297F5321001F95CD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD301E297F5321001F95CD /* Message.swift */; };
 		B4BD3022297F53AA001F95CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3021297F53AA001F95CD /* Person.swift */; };
 		B4BD3024297F5454001F95CD /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3023297F5454001F95CD /* MessagePreview.swift */; };
@@ -43,6 +46,9 @@
 		B456B4CB297EDE85005590FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B458B0F62981766600B1C987 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		B458B0F8298176E900B1C987 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
+		B48289132982BEEF001BBE11 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		B48289152982BF50001BBE11 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B48289182982C103001BBE11 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 		B4BD301E297F5321001F95CD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B4BD3021297F53AA001F95CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B4BD3023297F5454001F95CD /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
@@ -90,13 +96,15 @@
 				B456B4B7297ED247005590FC /* TinderCloneApp.swift */,
 				B456B4B9297ED247005590FC /* ContentView.swift */,
 				B456B4C9297EDC3E005590FC /* AppStateManager.swift */,
+				B48289132982BEEF001BBE11 /* UserManager.swift */,
 				B4ED8258297EFCCB00656C69 /* MainTabBar */,
 				B4ED825B297EFE2100656C69 /* Profile */,
-				B4BD3020297F5329001F95CD /* Model */,
-				B4ED8261297F022800656C69 /* HelperView */,
 				B4BD3027297F550A001F95CD /* Messages */,
-				B456B4BB297ED248005590FC /* Assets.xcassets */,
+				B48289172982C0C8001BBE11 /* Matches View */,
+				B4ED8261297F022800656C69 /* HelperView */,
+				B4BD3020297F5329001F95CD /* Model */,
 				B456B4BD297ED248005590FC /* Preview Content */,
+				B456B4BB297ED248005590FC /* Assets.xcassets */,
 				B456B4CB297EDE85005590FC /* Extensions.swift */,
 			);
 			path = TinderClone;
@@ -110,12 +118,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B48289172982C0C8001BBE11 /* Matches View */ = {
+			isa = PBXGroup;
+			children = (
+				B48289182982C103001BBE11 /* LikesView.swift */,
+			);
+			path = "Matches View";
+			sourceTree = "<group>";
+		};
 		B4BD3020297F5329001F95CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				B4BD301E297F5321001F95CD /* Message.swift */,
 				B4BD3023297F5454001F95CD /* MessagePreview.swift */,
 				B4BD3021297F53AA001F95CD /* Person.swift */,
+				B48289152982BF50001BBE11 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,8 +270,11 @@
 				B456B4B8297ED247005590FC /* TinderCloneApp.swift in Sources */,
 				B4BD301F297F5321001F95CD /* Message.swift in Sources */,
 				B4ED825A297EFE1400656C69 /* ProfileView.swift in Sources */,
+				B48289192982C103001BBE11 /* LikesView.swift in Sources */,
 				B456B4CA297EDC3E005590FC /* AppStateManager.swift in Sources */,
+				B48289142982BEEF001BBE11 /* UserManager.swift in Sources */,
 				B4BD3024297F5454001F95CD /* MessagePreview.swift in Sources */,
+				B48289162982BF50001BBE11 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
