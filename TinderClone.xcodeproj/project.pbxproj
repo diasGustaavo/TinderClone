@@ -20,6 +20,7 @@
 		B48289142982BEEF001BBE11 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48289132982BEEF001BBE11 /* UserManager.swift */; };
 		B48289162982BF50001BBE11 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48289152982BF50001BBE11 /* User.swift */; };
 		B48289192982C103001BBE11 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48289182982C103001BBE11 /* LikesView.swift */; };
+		B482891B2982C59B001BBE11 /* PersonSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482891A2982C59B001BBE11 /* PersonSquare.swift */; };
 		B4BD301F297F5321001F95CD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD301E297F5321001F95CD /* Message.swift */; };
 		B4BD3022297F53AA001F95CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3021297F53AA001F95CD /* Person.swift */; };
 		B4BD3024297F5454001F95CD /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD3023297F5454001F95CD /* MessagePreview.swift */; };
@@ -49,6 +50,7 @@
 		B48289132982BEEF001BBE11 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B48289152982BF50001BBE11 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B48289182982C103001BBE11 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
+		B482891A2982C59B001BBE11 /* PersonSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSquare.swift; sourceTree = "<group>"; };
 		B4BD301E297F5321001F95CD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B4BD3021297F53AA001F95CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B4BD3023297F5454001F95CD /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B48289182982C103001BBE11 /* LikesView.swift */,
+				B482891A2982C59B001BBE11 /* PersonSquare.swift */,
 			);
 			path = "Matches View";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				B4BF98242980237D00197E3C /* ChatManager.swift in Sources */,
 				B458B0F72981766600B1C987 /* MessageListView.swift in Sources */,
 				B456B4C8297ED58C005590FC /* TabBarButtonView.swift in Sources */,
+				B482891B2982C59B001BBE11 /* PersonSquare.swift in Sources */,
 				B4ED825D297EFFAF00656C69 /* RoundedImage.swift in Sources */,
 				B4BF9826298026F400197E3C /* ChatViewHeader.swift in Sources */,
 				B4EBDFC82981A2AF005CDE44 /* MessageRowView.swift in Sources */,
