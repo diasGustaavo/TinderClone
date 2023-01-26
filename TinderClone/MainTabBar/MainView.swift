@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @EnvironmentObject var appState: AppStateManager
+    
     private var isSmallPhone: Bool {
         return false
     }
@@ -21,7 +22,7 @@ struct MainView: View {
             let view = Text("Fire")
             return AnyView(view)
         case .star:
-            let view = Text("star")
+            let view = MatchesView()
             return AnyView(view)
         case .message:
             let view = MessageListView()
@@ -76,6 +77,8 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView().environmentObject(AppStateManager())
+        MainView()
+            .environmentObject(AppStateManager())
+            .environmentObject(UserManager())
     }
 }

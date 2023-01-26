@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var userMng: UserManager
+    @EnvironmentObject var appState: AppStateManager
+    
+    var user: User {
+        return userMng.currentUser
+    }
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
                 // PHOTO
                 ZStack(alignment: .topTrailing) {
-                    RoundedImage(url: URL(string: "https://picsum.photos/400"))
+                    RoundedImage(url: user.imageURLS.first)
                         .frame(height: UIScreen.screenWidth * 0.45)
                     Button {
                         // action
@@ -34,13 +41,13 @@ struct ProfileView: View {
                 
                 // NAME + JOB TITLE
                 Group {
-                    Text("Gustavo, 21")
+                    Text("\(user.name), \(user.age)")
                         .foregroundColor(.textTitle)
                         .font(.system(size: 26, weight: .medium))
                     
                     Spacer().frame(height: 6)
                     
-                    Text("Software Engineer")
+                    Text(user.jobTitle)
                     
                     Spacer().frame(height: 22)
                 }
@@ -113,38 +120,42 @@ struct ProfileView: View {
                 Spacer().frame(height: 14)
                 
                 // TIP
-                HStack {
-                    Text("Photo Tip: Make Waves with a beach photo and get more likes")
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(3)
-                        .foregroundColor(.white)
-                        .font(.system(size: 14))
-                    
-                    Button {
-                        // action
-                    } label: {
-                        Image(systemName: "plus")
-                            .font(.system(size: 12, weight: .heavy))
-                            .foregroundColor(.pink)
-                            .padding(6)
+                if !user.profileTip.isEmpty {
+                    HStack {
+                        Text("\(user.profileTip)")
+                            .multilineTextAlignment(.leading)
+                            .lineLimit(3)
+                            .foregroundColor(.white)
+                            .font(.system(size: 14))
+                        
+                        Button {
+                            // action
+                        } label: {
+                            Image(systemName: "plus")
+                                .font(.system(size: 12, weight: .heavy))
+                                .foregroundColor(.pink)
+                                .padding(6)
+                        }
+                        .background(Color.white)
+                        .clipShape(Circle())
                     }
-                    .background(Color.white)
-                    .clipShape(Circle())
-                }
-                .padding()
-                .background(Color.pink)
-                .cornerRadius(12)
+                    .padding()
+                    .background(Color.pink)
+                    .cornerRadius(12)
                 .padding(.horizontal, 8)
+                }
                 
                 // Tinder Gold Offering
-                ZStack {
-                    Color.gray.opacity(0.15)
-                    ProfileSwipePromo {
-                        // action
+                if !user.goldSubscriber {
+                    ZStack {
+                        Color.gray.opacity(0.15)
+                        ProfileSwipePromo {
+                            appState.showPurchaseScreen()
+                        }
                     }
-                }
-                .padding(.top, 18)
+                    .padding(.top, 18)
                 .frame(height: 260)
+                }
             }
             .foregroundColor(Color.black.opacity(0.75))
         }
@@ -155,5 +166,7 @@ struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
             .background(Color.defaultBackground)
+            .environmentObject(UserManager())
+            .environmentObject(AppStateManager())
     }
 }
