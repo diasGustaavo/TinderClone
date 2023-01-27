@@ -38,7 +38,7 @@ struct PurchasePopup: View {
                         .padding(.top, -35)
                     
                     HStack {
-                        ForEach(subscriptions.indices) { subIndex in
+                        ForEach(subscriptions.indices, id: \.self) { subIndex in
                             let sub = subscriptions[subIndex]
                             
                             PurchaseOptionView(sub: sub, isSelected: subIndex == selectedIndex)
