@@ -72,6 +72,8 @@ struct MainView: View {
                 
                 if appState.showPurchasePopup {
                     PurchasePopup(isVisible: $appState.showPurchasePopup)
+                        .animation(.spring(response: 0.4, dampingFraction: 0.7, blendDuration: 0.5))
+                        .transition(.offset(y: 900))
                 }
             }
             .modifier(HideNavigationView())
