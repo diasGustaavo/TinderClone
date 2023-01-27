@@ -69,6 +69,10 @@ struct MainView: View {
                         Spacer().frame(height: 20)
                     }
                 }
+                
+                if appState.showPurchasePopup {
+                    PurchasePopup(isVisible: $appState.showPurchasePopup)
+                }
             }
             .modifier(HideNavigationView())
         }
