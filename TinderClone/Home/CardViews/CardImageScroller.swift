@@ -12,6 +12,7 @@ struct CardImageScroller: View {
     var person: Person
     
     @State private var imageIndex = 0
+    @Binding var fullScreenMode: Bool
     
     func updateImageIndex(addition: Bool) {
         let newIndex: Int
@@ -48,14 +49,59 @@ struct CardImageScroller: View {
                             updateImageIndex(addition: true)
                         }
                 }
-                .foregroundColor(Color.white.opacity(0.001))
+                .foregroundColor(Color.white.opacity(0.0001))
             }
+            
+            VStack {
+                HStack {
+                    ForEach(0..<person.imageURLS.count, id: \.self) { imageIndex in
+                        RoundedRectangle(cornerRadius: 20)
+                            .frame(height: 4)
+                            .foregroundColor(self.imageIndex == imageIndex ? Color.white : Color.gray.opacity(0.5))
+                    }
+                }
+                .padding(.top, 6)
+                .padding(.horizontal, fullScreenMode ? 0 : 12)
+                
+                Spacer()
+                
+                if !fullScreenMode {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Text(person.name)
+                                    .font(.system(size: 32, weight: .heavy))
+                                
+                                Text(String(person.age))
+                                    .font(.system(size: 28, weight: .light))
+                            }
+                            
+                            Text(person.bio)
+                                .font(.system(size: 18, weight: .medium))
+                                .lineLimit(2)
+                        }
+                        
+                        Spacer()
+                        
+                        Button {
+                            fullScreenMode = true
+                        } label: {
+                            Image(systemName: "info.circle.fill")
+                                .font(.system(size: 26, weight: .medium))
+                        }
+                    }
+                    .padding(16)
+                }
+            }
+            .foregroundColor(Color.white)
         }
+        .cornerRadius(6)
+        .shadow(radius: 5)
     }
 }
 
 struct CardImageScroller_Previews: PreviewProvider {
     static var previews: some View {
-        CardImageScroller(person: Person.example)
+        CardImageScroller(person: Person.example, fullScreenMode: .constant(false))
     }
 }
