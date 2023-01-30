@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B42680752988417600D13F37 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42680742988417600D13F37 /* CircleButtonView.swift */; };
 		B42680772988502E00D13F37 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42680762988502E00D13F37 /* CardStack.swift */; };
+		B42680792988520100D13F37 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42680782988520100D13F37 /* HomeView.swift */; };
 		B4396D6529840B5500462FBC /* SwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6429840B5500462FBC /* SwipePromo.swift */; };
 		B4396D6829840DC500462FBC /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6729840DC500462FBC /* PurchaseOptionView.swift */; };
 		B4396D6A29840E0E00462FBC /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6929840E0E00462FBC /* Subscription.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		B42680742988417600D13F37 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		B42680762988502E00D13F37 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		B42680782988520100D13F37 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4396D6429840B5500462FBC /* SwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipePromo.swift; sourceTree = "<group>"; };
 		B4396D6729840DC500462FBC /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
 		B4396D6929840E0E00462FBC /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				B475DEDE29855CE70045D8C6 /* CardViews */,
+				B42680782988520100D13F37 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				B4ED825D297EFFAF00656C69 /* RoundedImage.swift in Sources */,
 				B48243732982F71E00473A33 /* PurchasePopup.swift in Sources */,
 				B4BF9826298026F400197E3C /* ChatViewHeader.swift in Sources */,
+				B42680792988520100D13F37 /* HomeView.swift in Sources */,
 				B48243712982E9F500473A33 /* MatchesView.swift in Sources */,
 				B4EBDFC82981A2AF005CDE44 /* MessageRowView.swift in Sources */,
 				B456B4CC297EDE85005590FC /* Extensions.swift in Sources */,

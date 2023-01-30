@@ -39,7 +39,12 @@ extension Person {
     )
     static let example2 = Person(
         name: "Samantha",
-        imageURLS: [URL(string: "https://picsum.photos/400/301")!],
+        imageURLS: [
+            URL(string: "https://picsum.photos/400/304")!,
+            URL(string: "https://picsum.photos/400/305")!,
+            URL(string: "https://picsum.photos/400/306")!,
+            URL(string: "https://picsum.photos/400/307")!,
+        ],
         bio: "I really like pizza",
         age: 24,
         bioLong: "Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. ",
@@ -50,7 +55,12 @@ extension Person {
         Person.example2,
         Person(
             name: "Olivia",
-            imageURLS: [URL(string: "https://picsum.photos/400/302")!],
+            imageURLS: [
+                URL(string: "https://picsum.photos/400/300")!,
+                URL(string: "https://picsum.photos/400/301")!,
+                URL(string: "https://picsum.photos/400/302")!,
+                URL(string: "https://picsum.photos/400/303")!,
+            ],
             bio: "I love hiking",
             age: 30,
             bioLong: "Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. ",
@@ -58,7 +68,12 @@ extension Person {
         ),
         Person(
             name: "Sophia",
-            imageURLS: [URL(string: "https://picsum.photos/400/303")!],
+            imageURLS: [
+                URL(string: "https://picsum.photos/400/304")!,
+                URL(string: "https://picsum.photos/400/305")!,
+                URL(string: "https://picsum.photos/400/306")!,
+                URL(string: "https://picsum.photos/400/307")!,
+            ],
             bio: "I am really boring",
             age: 28,
             bioLong: "Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. ",
@@ -66,7 +81,12 @@ extension Person {
         ),
         Person(
             name: "Mia",
-            imageURLS: [URL(string: "https://picsum.photos/400/304")!],
+            imageURLS: [
+                URL(string: "https://picsum.photos/400/308")!,
+                URL(string: "https://picsum.photos/400/309")!,
+                URL(string: "https://picsum.photos/400/310")!,
+                URL(string: "https://picsum.photos/400/311")!,
+            ],
             bio: "I like to skateboard",
             age: 22,
             bioLong: "Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. Im into cats. ",
