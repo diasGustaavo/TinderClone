@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B42680752988417600D13F37 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42680742988417600D13F37 /* CircleButtonView.swift */; };
 		B4396D6529840B5500462FBC /* SwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6429840B5500462FBC /* SwipePromo.swift */; };
 		B4396D6829840DC500462FBC /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6729840DC500462FBC /* PurchaseOptionView.swift */; };
 		B4396D6A29840E0E00462FBC /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6929840E0E00462FBC /* Subscription.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B42680742988417600D13F37 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		B4396D6429840B5500462FBC /* SwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipePromo.swift; sourceTree = "<group>"; };
 		B4396D6729840DC500462FBC /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
 		B4396D6929840E0E00462FBC /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				B4ED825C297EFFAF00656C69 /* RoundedImage.swift */,
+				B42680742988417600D13F37 /* CircleButtonView.swift */,
 			);
 			path = HelperView;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				B4BF98242980237D00197E3C /* ChatManager.swift in Sources */,
 				B458B0F72981766600B1C987 /* MessageListView.swift in Sources */,
 				B456B4C8297ED58C005590FC /* TabBarButtonView.swift in Sources */,
+				B42680752988417600D13F37 /* CircleButtonView.swift in Sources */,
 				B482891B2982C59B001BBE11 /* PersonSquare.swift in Sources */,
 				B4ED825D297EFFAF00656C69 /* RoundedImage.swift in Sources */,
 				B48243732982F71E00473A33 /* PurchasePopup.swift in Sources */,
