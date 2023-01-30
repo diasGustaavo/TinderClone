@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B42680752988417600D13F37 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42680742988417600D13F37 /* CircleButtonView.swift */; };
+		B42680772988502E00D13F37 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42680762988502E00D13F37 /* CardStack.swift */; };
 		B4396D6529840B5500462FBC /* SwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6429840B5500462FBC /* SwipePromo.swift */; };
 		B4396D6829840DC500462FBC /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6729840DC500462FBC /* PurchaseOptionView.swift */; };
 		B4396D6A29840E0E00462FBC /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4396D6929840E0E00462FBC /* Subscription.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		B42680742988417600D13F37 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		B42680762988502E00D13F37 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
 		B4396D6429840B5500462FBC /* SwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipePromo.swift; sourceTree = "<group>"; };
 		B4396D6729840DC500462FBC /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
 		B4396D6929840E0E00462FBC /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				B475DEDF29855D0B0045D8C6 /* CardImageScroller.swift */,
 				B475DEE3298565930045D8C6 /* CardView.swift */,
 				B475DEE529856EE40045D8C6 /* FullScreenCardView.swift */,
+				B42680762988502E00D13F37 /* CardStack.swift */,
 			);
 			path = CardViews;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				B4BD3024297F5454001F95CD /* MessagePreview.swift in Sources */,
 				B475DEE4298565930045D8C6 /* CardView.swift in Sources */,
 				B48289162982BF50001BBE11 /* User.swift in Sources */,
+				B42680772988502E00D13F37 /* CardStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
